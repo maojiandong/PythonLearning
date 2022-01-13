@@ -26,5 +26,46 @@ raw 字符串(原始字符串)
 \uxxxx  Unicode16 的十六进制字符
 \Uxxxxxxxx  Unicode32的十六进制字符
 
+字符串切片
+a = "123456789"
+print(a[5])
+# 切片
+print(a[3:7])
+# 步长为2 对应位置的意思 起始:终止:步长
+print(a[3::2])
+# 打印到最后
+print(a[1:])
+# 倒着打印 第一个-1表示起始，第二个-1表示步长
+print(a[-1::-1])
+
+## 字符串常用函数
+字符编码转换函数：
+    ord(s)  返回一个字符的编码值(ascii/unicode值)
+    chr(i)  返回i这个值所对应的字符
+整数转为字符串函数
+    bin(i)  将整数转换为二进制字符串
+    hex(i)  将整数转换为十六进制字符串
+    oct(i)  将整数转换为八进制字符串
+字符串转换函数
+    str(x)  讲对象转换为字符串
+    int(x)  将对象转换为整数类型
+    float(x)    浮点
+    complex(x)
+    bool(x)
+
+字符串属性方法
+方法              说明
+S.isdigit()      判断字符串是否全为数字
+S.isalpha()      判断字符串是否全为字符(英文字符)
+S.isnumeric()    是否为数字
+S.center(width[,fill])      将原字符串居中，左右默认填充空格 width表示长度，我们要让字符串居中的总的字符串是多长
+S.count(sub[,start[,end]])  获取一个字符串中sub的个数
+S.find(sub[,start[,end]])   返回索引
+S.replace(old,new[,count])  将原字符串old用new代替，生成一个新的字符串
+S.strip()   去掉左右空白字符
+等等……
+
 #######################################
 字符串编码
+Unicode编码解决编码方式繁多不够用的情况
+utf8编码：
